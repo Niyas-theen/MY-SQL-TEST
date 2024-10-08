@@ -67,8 +67,10 @@ git clone https://github.com/your-username/ecommerce-database.git
 <ol>
   <li>Access the database:</li>
 </ol>
+<code>
 mysql -u your-username -p
 USE ecommerce;
+</code>
 
 <h2>Usage</h2>
 <p>Once the database is set up, you can execute the provided SQL queries to perform operations such as retrieving customer orders, updating product prices, and calculating order statistics.</p>
@@ -79,25 +81,31 @@ USE ecommerce;
 <ol>
   <li>Retrieve all customers who placed an order in the last 30 days:</li>
 </ol>
+<code>
 SELECT DISTINCT c.name
 FROM customers c
 JOIN orders o ON c.id = o.customer_id
 WHERE o.order_date >= CURDATE() - INTERVAL 30 DAY;
+</code>
 
 <ol>
   <li>Get the total amount of all orders placed by each customer:</li>
 </ol>
+<code>
 SELECT c.name, SUM(o.total_amount) AS total_spent
 FROM customers c
 JOIN orders o ON c.id = o.customer_id
 GROUP BY c.name;
+</code>
 
 <ol>
   <li>Update the price of a specific product:</li>
 </ol>
+<code>
 UPDATE products
 SET price = 45.00
 WHERE name = 'Indomie';
+</code>
 
 <P>For more queries, check the queries.sql file in the repository.</P>
 
@@ -106,16 +114,18 @@ WHERE name = 'Indomie';
 <ul>
   <li>Retrieve the top 3 products by price</li>
 </ul>
+<code>
 SELECT name, price
 FROM products
 ORDER BY price DESC
 LIMIT 3;
+</code>
 
 <ul>
   <li>Join the orders and customers tables:</li>
 </ul>
 <code>
-  SELECT c.name, o.order_date
+SELECT c.name, o.order_date
 FROM customers c
 JOIN orders o ON c.id = o.customer_id;
 </code>

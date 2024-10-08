@@ -4,6 +4,12 @@
 
 <h3>Table of Contents</h3>
 
-<ul>
-  <li>https://chatgpt.com/c/6704b44d-0d64-8007-993c-0cf2cee7e5d7#overview</li>
-</ul>
+<ol>
+  <li>Overview</li>
+  <li>Database Structure</li>
+  <li>Installation</li>
+  <li>Usage</li>
+  <li>Queries</li>
+  <li>Contributing</li>
+  <li>License</li>
+</ol>

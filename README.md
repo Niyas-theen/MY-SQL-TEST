@@ -4,7 +4,7 @@
 
 <h3>Table of Contents</h3>
 
-<ol>
+<ul>
   <li>Overview</li>
   <li>Database Structure</li>
   <li>Installation</li>
@@ -12,4 +12,4 @@
   <li>Queries</li>
   <li>Contributing</li>
   <li>License</li>
-</ol>
+</ul>

@@ -114,10 +114,11 @@ LIMIT 3;
 <ul>
   <li>Join the orders and customers tables:</li>
 </ul>
-SELECT c.name, o.order_date
+<code>
+  SELECT c.name, o.order_date
 FROM customers c
 JOIN orders o ON c.id = o.customer_id;
-
+</code>
 <h2>Contributing</h2>
 <p>If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with any enhancements or fixes. You can also open an issue if you encounter any problems.</p>
 
